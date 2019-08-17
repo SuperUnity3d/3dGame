@@ -4,14 +4,8 @@ using UnityEngine;
 
 public class Spin : MonoBehaviour
 {
-    public float speed = 3.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float speed = 3.0f; //Объявление общедоступной переменной для скорости вращения
 
-    // Update is called once per frame
     void Update()
     {
         if (speed == 6.0f)
@@ -22,6 +16,5 @@ public class Spin : MonoBehaviour
         { //иначе куб поворачивается в другую сторону
             transform.Rotate(0, -speed, 0);
         }
-
     }
 }
